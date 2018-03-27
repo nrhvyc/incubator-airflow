@@ -184,9 +184,13 @@ Sensors
 .. autoclass:: airflow.contrib.sensors.emr_job_flow_sensor.EmrJobFlowSensor
 .. autoclass:: airflow.contrib.sensors.emr_step_sensor.EmrStepSensor
 .. autoclass:: airflow.contrib.sensors.file_sensor.FileSensor
-.. autoclass:: airflow.contrib.sensors.ftp_sensor.FtpSensor
-.. autoclass:: airflow.contrib.sensors.gcs_sensor.GcsSensor
-.. autoclass:: airflow.contrib.sensors.hdfs_sensor.HdfsSensor
+.. autoclass:: airflow.contrib.sensors.ftp_sensor.FTPSensor
+.. autoclass:: airflow.contrib.sensors.ftp_sensor.FTPSSensor
+.. autoclass:: airflow.contrib.sensors.gcs_sensor.GoogleCloudStorageObjectSensor
+.. autoclass:: airflow.contrib.sensors.gcs_sensor.GoogleCloudStorageObjectUpdatedSensor
+.. autoclass:: airflow.contrib.sensors.gcs_sensor.GoogleCloudStoragePrefixSensor
+.. autoclass:: airflow.contrib.sensors.hdfs_sensor.HdfsSensorFolder
+.. autoclass:: airflow.contrib.sensors.hdfs_sensor.HdfsSensorRegex
 .. autoclass:: airflow.contrib.sensors.jira_sensor.JiraSensor
 .. autoclass:: airflow.contrib.sensors.pubsub_sensor.PubSubPullSensor
 .. autoclass:: airflow.contrib.sensors.qubole_sensor.QuboleSensor
@@ -310,7 +314,9 @@ interface when possible and acting as building blocks for operators.
       HiveMetastoreHook,
       HiveServer2Hook
 .. autoclass:: airflow.hooks.http_hook.HttpHook
+.. autoclass:: airflow.hooks.druid_hook.DruidDbApiHook
 .. autoclass:: airflow.hooks.druid_hook.DruidHook
+.. autoclass:: airflow.hooks.jdbc_hook.JdbcHook
 .. autoclass:: airflow.hooks.mssql_hook.MsSqlHook
 .. autoclass:: airflow.hooks.mysql_hook.MySqlHook
 .. autoclass:: airflow.hooks.postgres_hook.PostgresHook
@@ -327,6 +333,7 @@ Community contributed hooks
 .. autoclass:: airflow.contrib.hooks.vertica_hook.VerticaHook
 .. autoclass:: airflow.contrib.hooks.ftp_hook.FTPHook
 .. autoclass:: airflow.contrib.hooks.ssh_hook.SSHHook
+.. autoclass:: airflow.contrib.hooks.sftp_hook.SFTPHook
 .. autoclass:: airflow.contrib.hooks.cloudant_hook.CloudantHook
 .. autoclass:: airflow.contrib.hooks.gcs_hook.GoogleCloudStorageHook
 .. autoclass:: airflow.contrib.hooks.gcp_pubsub_hook.PubSubHook
